@@ -1,0 +1,80 @@
+<div class="container">
+  <div class="grid">
+    <div class="row">
+      <div class="col">
+        <h1>Uneaten</h1>
+        <ul class="uneaten list-group">
+          {{#each burgers}} {{#unless devoured}}
+          <li class="burger{{id}} list-group-item list-group-item-dark text-center" data-id={{id}}>{{burger_name}}
+           <button class="devour" data-id={{id}}><i class="fas fa-utensils"></i></button> 
+          </li> {{/unless}} {{/each}} 
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Eaten</h1>
+        <ul class="eaten list-group">
+          {{#each burgers}} {{#if devoured}}
+          <li class="burger{{id}} list-group-item list-group-item-dark text-center" data-id={{id}}>{{burger_name}}
+            <button class="delete" data-id={{id}}><i class="fas fa-trash "></i></button> 
+          </li> {{/if}} {{/each}}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  $(document).on("click", '.devour', function (e) {
+    var id = $(this).data("id")
+    console.log(id)
+    $.ajax({
+      url: '/update/' + id,
+      method: 'put',
+      data: { id: id, devoured: 1 },
+      success: function (res) {
+        console.log("updated, response: ")
+        var eatenBurger = $(`.burger${id}`);
+        eatenBurger.remove()
+        eatenBurger.children().remove()
+        $('.eaten').append(eatenBurger)
+        location.reload()
+      }
+    })
+  })
+  $(document).on("click", '.newBurger', function (e) {
+    e.preventDefault()
+    var burger_name = $('#burgerName').val()
+    $.ajax({
+      url: '/',
+      method: 'post',
+      data: { burger_name: burger_name, devoured: 0 },
+      success: function (res) {
+        console.log(res)
+        $(".uneaten").append(
+          `<li class="burger${res[1]} list-group-item list-group-item-dark text-center" data-id=${res[1]}>${res[0].burger_name}
+              <button class="devour" data-id={{id}}><i class="fas fa-utensils"></i></button>
+            </li>`
+        )
+         location.reload()
+      }
+    })
+    $('#burgerName').val('')
+  })
+
+   $(document).on("click", '.delete', function (e) {
+    var id = $(this).data("id")
+    console.log(id)
+    $.ajax({
+      url: '/update/' + id,
+      method: 'delete',
+      data: { id: id, devoured: 1 },
+      success: function (res) {
+        console.log("updated, response: ")
+        var eatenBurger = $(`.burger${id}`);
+        eatenBurger.remove()
+        eatenBurger.children().remove()
+      }
+    })
+  })
+  
+</script>
