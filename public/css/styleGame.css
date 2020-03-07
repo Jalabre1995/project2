@@ -10,7 +10,25 @@
     height: 100px;
     width: 100px;
     position: relative;
-    top: 275px;
-    left: 220px;
-    
+    top: 375px;
+    left: 220px;   
+}
+.scoreboard{
+    background-color: purple;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    left: 450px;
+    bottom: 220px;
+    text-align: center;
+    font-weight: bold;
+    border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+}
+.time{
+    font-size: 20px;
+}
+.homeScore,.awayScore{
+    font-size: 25px;
 }
