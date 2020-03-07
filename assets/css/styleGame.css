@@ -1,0 +1,15 @@
+#gameBody{
+    background-image: linear-gradient(to right, black, white, black);
+}
+#hoop{
+    position: relative;
+    left: 460px;
+    top: 20px;
+}
+#ball{
+    height: 100px;
+    width: 100px;
+    position: relative;
+    top: 275px;
+    left: 220px;
+}
