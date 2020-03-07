@@ -4,7 +4,6 @@
 <head>
     <meta charset="UTF-8">
     <title>NBAs</title>
-    <!-- Latest compiled and minified CSS & JS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -16,8 +15,12 @@
 
     <style>
         body {
-            background-color: black;
+            background-color: #878787;
             font-family: cursive;
+        }
+
+        .jumbotron {
+            background: none;
         }
 
         .glow {
@@ -29,13 +32,12 @@
             animation: glow 1s ease-in-out infinite alternate;
         }
 
-        .dots {
 
-            height: 100px;
-            width: 100px;
-            background-color: #ff4da6;
+        .dots {
+            background-color: #bbb;
             border-radius: 50%;
             display: inline-block;
+            background: none;
             -webkit-animation: dots 1s ease-in-out infinite alternate;
             -moz-animation: dots 1s ease-in-out infinite alternate;
             animation: dots 1s ease-in-out infinite alternate;
@@ -43,32 +45,88 @@
 
         @-webkit-keyframes glow {
             from {
-                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                text-shadow: 0 0 10px yellow, 0 0 20px yellow ,0 0 30px 	#8A2BE2, 0 0 40px  	#8A2BE2, 0 0 50px  	#8A2BE2, 0 0 60px  	#8A2BE2, 0 0 70px  	#8A2BE2;
             }
 
             to {
-                text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                text-shadow: 0 0 20px yellow, 0 0 20px yellow , 0 0 40px  	#8A2BE2, 0 0 50px  	#8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2, 0 0 80px  	#8A2BE2;
             }
         }
 
-        @-webkit-keyframes dots {
+        @-webkit-keyframes bb {
             from {
-                box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+                box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
             }
 
             to {
-                box-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+                box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffff, 0 0 50px #ffff, 0 0 60px #ffff, 0 0 70px #fff, 0 0 80px #fff;
             }
         }
+
+        #bb {
+            height: 50px;
+            width: 50px;
+            background: transparent;
+            -webkit-animation: bb 1s ease-in-out infinite alternate;
+            -moz-animation: bb 1s ease-in-out infinite alternate;
+            animation: bb 1s ease-in-out infinite alternate;
+            
+        }
+
+        .logos {
+            max-width: 1800px 
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(226, 218, 218), black, rgb(226, 218, 218));
+        }
+
     </style>
 </head>
 
 <body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="glow">WE'RE PLAYING BASKETBALL </h1>
+        </div>
+    </div>
 
-    <h1 class="glow">WE'RE PLAYING BASKETBALL </h1>
 
-
-    <span class="dots"></span>
+    <div class="container logos">
+        <div class=" row dots">
+            <div class=" col-md-12">
+                <img id='bb' src="public//assets/logos/hawks.png" alt="Hawks">
+                <img id='bb' src="public//assets/logos/76ers.png" alt="76ers">
+                <img id='bb' src="public//assets/logos/bk-nets.png" alt="Nets">
+                <img id='bb' src="public//assets/logos/blazers.png" alt="blazers">
+                <img id='bb' src="public//assets/logos/bucks.png" alt="bucks">
+                <img id='bb' src="public//assets/logos/bulls.png" alt="bulls">
+                <img id='bb' src="public//assets/logos/hawks.png" alt="cavs">
+                <img id='bb' src="public//assets/logos/celtics.png" alt="celtics">
+                <img id='bb' src="public//assets/logos/clippers.png" alt="clippers">
+                <img id='bb' src="public//assets/logos/golden_state.png" alt="warriors">
+                <img id='bb' src="public//assets/logos/grizzlers.png" alt="grizzlers">
+                <img id='bb' src="public//assets/logos/heat.png" alt="heat">
+                <img id='bb' src="public//assets/logos/hornets.png" alt="hornets">
+                <img id='bb' src="public//assets/logos/jazz.png" alt="jazz">
+                <img id='bb' src="public//assets/logos/kings.png" alt="kings">
+                <img id='bb' src="public//assets/logos/knicks.png" alt="knicks">
+                <img id='bb' src="public//assets/logos/lakers.png" alt="lakers">
+                <img id='bb' src="public//assets/logos/magic.png" alt="magic">
+                <img id='bb' src="public//assets/logos/mavericks.png" alt="mavericks">
+                <img id='bb' src="public//assets/logos/nuggets.png" alt="nuggets">
+                <img id='bb' src="public//assets/logos/okc.png" alt="okc">
+                <img id='bb' src="public//assets/logos/pacers.png" alt="pacers">
+                <img id='bb' src="public//assets/logos/pelicans.png" alt="pelicans">
+                <img id='bb' src="public//assets/logos/pistons.png" alt="pistons">
+                <img id='bb' src="public//assets/logos/raptors.png" alt="raptors">
+                <img id='bb' src="public//assets/logos/rockets.png" alt="rockets">
+                <img id='bb' src="public//assets/logos/spurs.png" alt="spurs">
+                <img id='bb' src="public//assets/logos/suns.png" alt="suns">
+                <img id='bb' src="public//assets/logos/wizzards.png" alt="wizzards">
+                <img id='bb' src="public//assets/logos/wolves.png" alt="wolves">
+            </div>
+        </div>
+    </div>
 
 
 </body>
