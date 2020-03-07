@@ -4,10 +4,15 @@
     top: 20px;
 }
 
-#ball{
+.ball{
     height: 100px;
     width: 100px;
-    position: relative;
-    top: 375px;
-    left: 220px;   
+    
+}
+#b1 {
+    float: left;
+}
+
+#b2 {
+    float: right;
 }
