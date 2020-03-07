@@ -8,6 +8,10 @@ var secondsLeft = 60;
 
             $(".time").text(secondsLeft + ".00");
 
+            moveLeft();
+
+            moveRight()
+
             if (secondsLeft === 0.00){
 
                 secondsLeft = 0.00;
@@ -16,7 +20,7 @@ var secondsLeft = 60;
 
                 $(".time").text(secondsLeft);
 
-            } return;
+            } 
 
         }, 1000);
 
@@ -26,9 +30,9 @@ var secondsLeft = 60;
 
         $("#hoop").animate({
 
-            left : '350px'
+            left : '20px'
 
-        });
+        }, 3000);
 
     }
 
@@ -36,11 +40,18 @@ var secondsLeft = 60;
 
         $("#hoop").animate({
 
-            left : '550px'
+            left : '900px'
 
-        });
+        }, 3000);
 
     }
 
-timer();
+        timer();
+
+     
+    
+    
+
+
+
 
