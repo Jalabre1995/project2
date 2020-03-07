@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Basketball Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styleGame.css">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
 
@@ -16,7 +17,84 @@
 
     <img id="ball" src="img/basketball.png" alt="the basketball">
 
-    <script src="assets/js/game.js"></script>
+    <div class="container scoreboard">
+
+        <div class="row">
+
+            <div class="col-md-12 time">
+
+                0:00
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 home">
+
+                Home
+
+            </div>
+
+            <div class="col-md-6 away">
+
+                Away
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6 homeScore">
+
+                0
+
+            </div>
+
+            <div class="col-md-6 awayScore">
+
+                0
+
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                Fouls
+
+            </div>
+
+            <div class="col-md-6">
+
+                Fouls
+
+            </div>
+
+        </div>
+
+        <div class="row fouls">
+
+            <div class="col-md-6 homeFouls">
+
+                00
+
+            </div>
+
+            <div class="col-md-6 awayFouls">
+
+                00
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/game.js"></script>
     
 </body>
 
