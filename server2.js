@@ -1,12 +1,16 @@
 const NBA = require("nba");
 const curry = NBA.findPlayer('Stephen Curry');
+const TeamID = NBA
 
 ////Team Information///
 NBA.stats.playerInfo({ PlayerID: curry.playerId }).then(console.log);
+console.log(curry);
 ////Golden State Warriors//////
 NBA.stats.commonTeamRoster({TeamID: 1610612744}).then(console.log);
+console.log(TeamID);
 /////Atlanta Hawks/////
 NBA.stats.commonTeamRoster({TeamID:1610612737 }).then(console.log);
+console.log(table);
 /////Boston Celtics //////
 NBA.stats.commonTeamRoster({TeamID:1610612738 }).then(console.log);
 ////Charlotte- Hornets//////
@@ -64,7 +68,7 @@ NBA.stats.commonTeamRoster({TeamID:1610612762}).then(console.log);
 ///Wizards///
 NBA.stats.commonTeamRoster({TeamID:1610612764}).then(console.log);
 
-
+////Players URL background image///// 
 
 
 

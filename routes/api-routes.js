@@ -1,41 +1,44 @@
-//////Dependencies //////////////
-var db = require("../models");
-const NBA = require("nba");
+///Dependecies///
 
-////Routes////////
+var Player =  require("../models/players.js");
 
+//Routes//
+//=====================================
 module.exports = function(app) {
-    ///Get route for all the NBA players/////
-    app.get("/api/players", function(req, res) {
+    //Search for a specific Player( or all players on team the Provides the Json)
+    app.get('/api/:players?', function(req, res){
         if(req.params.players){
-            db.NBA.findPlayer({
-                where: {
-                    routeName: req.params.players
-                }
-            }).then(function(result){
-                return res.json(result);
-            });
-        }else{
-            db.findAll().then(function(result){
+        ///Display the Json for only that player.
+        //Using the ORM to run our searches//
+        Player.findOne({
+            where: {
+                routeName: req.params.players
+            }
+        }).then(function(result){
+            return res.json(result);
+        });
+        }else {
+            Player.findAll().then(function(result){
                 return res.json(result);
             });
         }
-    })
-}
+    });
 
+    ///If the user want to add a new character into the database..
+    app.post('/api/new', function(req, res){
+        //Take the request....
+        var player = req.body;
+        //Create a routeName
+        
+        var routeName = player.name.replace(/\s+/g,"").toLowerCase();
+        //Then add the character to the database using sequelize/
+        Player.create({
+            routeName: routeName,
+            first_name: player.first_name,
+            last_name: player.last_name,
+            position: player.position
 
-//////Get the NBA Players/////
-const NBA = require("nba");
-const curry = NBA.findPlayer('Stephen Curry');
-console.log(curry);
-/* logs the following:
-{
-  firstName: 'Stephen',
-  lastName: 'Curry',
-  playerId: 201939,
-  teamId: 1610612744,
-  fullName: 'Stephen Curry',
-  downcaseName: 'stephen curry'
-}
-*/
-NBA.stats.playerInfo({ PlayerID: curry.teamId }).then(console.log);
+        });
+        res.status(204).end();
+    });
+};
