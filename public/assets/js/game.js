@@ -97,9 +97,3 @@ $("#ball").click(shootFirstBall);
         timer();
 
      
-    
-    
-
-
-
-
