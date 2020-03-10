@@ -1,6 +1,8 @@
 var secondsLeft = 60;
 
-$("#ball").click(shootFirstBall);
+var ball = $("#ball");
+
+ball.click(shootFirstBall);
 
     function timer() {
 
@@ -64,6 +66,12 @@ $("#ball").click(shootFirstBall);
 
         }, 500)
 
+        $("#ball").animate({
+
+            opacity : '0'
+
+        })
+
        var newBall =  $("<img>");
 
        newBall.attr("src","assets/img/basketball.png");
@@ -82,7 +90,7 @@ $("#ball").click(shootFirstBall);
 
         $(".ball").animate({
 
-            top : '-450px'
+            top : '0px'
 
         },700);
 
@@ -92,10 +100,28 @@ $("#ball").click(shootFirstBall);
 
         });
 
+        $(".ball").animate({
+
+            opacity : '0'
+
+        });
+
+        var newBall =  $("<img>");
+
+        newBall.attr("src","assets/img/basketball.png");
+ 
+        newBall.addClass("ball");
+ 
+        newBall.click(shootOtherBalls);
+ 
+        $("#gameBody").append(newBall);
+
     }
 
         timer();
 
+
+console.log();
      
     
     

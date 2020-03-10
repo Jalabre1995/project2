@@ -29,9 +29,9 @@
 .ball{
     height: 100px;
     width: 100px;
-    position: relative;
-    left: 593px;
-    top: 24px;
+    position: fixed;
+    bottom : 35px;
+    left : 595px;
 }
 .time{
     font-size: 20px;
