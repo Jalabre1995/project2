@@ -1,20 +1,22 @@
 var secondsLeft = 60;
 
+$("#ball").click(shootFirstBall);
+
     function timer() {
 
         var timerInterval = setInterval(function(){
 
             secondsLeft--;
 
-            $(".time").text(secondsLeft + ".00");
+            $(".time").text("0:"+secondsLeft);
 
             moveLeft();
 
             moveRight()
 
-            if (secondsLeft === 0.00){
+            if (secondsLeft === 0){
 
-                secondsLeft = 0.00;
+                secondsLeft = 0;
 
                 clearInterval(timerInterval);
 
@@ -43,6 +45,52 @@ var secondsLeft = 60;
             left : '900px'
 
         }, 3000);
+
+    }
+
+    function shootFirstBall(e) {
+
+        e.preventDefault();
+
+        $("#ball").animate({
+
+            top : '-10px'
+
+        }, 700)
+
+        $("#ball").animate({
+
+                top : '500px'
+
+        }, 500)
+
+       var newBall =  $("<img>");
+
+       newBall.attr("src","assets/img/basketball.png");
+
+       newBall.addClass("ball");
+
+       newBall.click(shootOtherBalls);
+
+       $("#gameBody").append(newBall);
+
+    }
+
+    function shootOtherBalls(e) {
+
+        e.preventDefault();
+
+        $(".ball").animate({
+
+            top : '-450px'
+
+        },700);
+
+        $(".ball").animate({
+
+            top : '500px'
+
+        });
 
     }
 
