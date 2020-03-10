@@ -1,31 +1,9 @@
 // Wrap every letter in a span
-text = []
-var love = $(".love")[0].textContent
 
-
-for (var i = 0; i < love.length; i++) {
-    
-    letter = love[i]
-    text.push(love[i])
-   
-   
-}
-console.log(text);
-var textWrapper = $('.glow');
-textWrapper.
-for (var i = 0; i < text.length; i++) {
-var span = $("<span>")
-span.append(text[i])
-span.addClass("letter")
-textWrapper.append(span)
-
-
-}
-
-var textContent = $('.col-md-12')
-
-
-textContent.append(span)
+var textWrapper = document.querySelector('.glow');
+var textContent = document.querySelector('.col-md-12')
+textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+textContent.innerhtml = textWrapper.textContent.replace(/\S/g, "<span class='logo'>$&</span>");
 
 anime.timeline({loop: false})
   .add({
