@@ -1,46 +1,56 @@
+  
 var secondsLeft = 60;
 
-    function timer() {
+function timer() {
 
-        var timerInterval = setInterval(function(){
+    var timerInterval = setInterval(function(){
 
-            secondsLeft--;
+        secondsLeft--;
 
-            $(".time").text(secondsLeft + ".00");
+        $(".time").text(secondsLeft + ".00");
 
-            if (secondsLeft === 0.00){
+        moveLeft();
 
-                secondsLeft = 0.00;
+        moveRight()
 
-                clearInterval(timerInterval);
+        if (secondsLeft === 0.00){
 
-                $(".time").text(secondsLeft);
+            secondsLeft = 0.00;
 
-            } return;
+            clearInterval(timerInterval);
 
-        }, 1000);
+            $(".time").text(secondsLeft);
 
-    }
+        } 
 
-    function moveLeft(){
+    }, 1000);
 
-        $("#hoop").animate({
+}
 
-            left : '350px'
+function moveLeft(){
 
-        });
+    $("#hoop").animate({
 
-    }
+        left : '20px'
 
-    function moveRight() {
+    }, 3000);
 
-        $("#hoop").animate({
+}
 
-            left : '550px'
+function moveRight() {
 
-        });
+    $("#hoop").animate({
 
-    }
+        left : '900px'
 
-timer();
+    }, 3000);
+
+}
+
+    timer();
+
+ 
+
+
+
 
