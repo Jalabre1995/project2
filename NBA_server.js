@@ -10,7 +10,6 @@ NBA.stats.commonTeamRoster({TeamID: 1610612744}).then(console.log);
 console.log(TeamID);
 /////Atlanta Hawks/////
 NBA.stats.commonTeamRoster({TeamID:1610612737 }).then(console.log);
-console.log(table);
 /////Boston Celtics //////
 NBA.stats.commonTeamRoster({TeamID:1610612738 }).then(console.log);
 ////Charlotte- Hornets//////
