@@ -17,5 +17,11 @@ var sequelize = new Sequelize("teamplayer", "root", "", {
   }
 });
 
+ 
+//Test DB
+db.authenticate()
+.then(() => console.log('Database conncected...'))
+.catch( err =>console.log('error:' + err))
+
 // Exports the connection for other files to use
 module.exports = sequelize;
