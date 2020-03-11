@@ -121,10 +121,3 @@ ball.click(shootFirstBall);
         timer();
 
 
-     
-    
-    
-
-
-
-
