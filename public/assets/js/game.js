@@ -18,7 +18,7 @@ ball.click(shootFirstBall);
 
             if (secondsLeft === 0){
 
-                secondsLeft = 0;
+                secondsLeft = "0:00";
 
                 clearInterval(timerInterval);
 
@@ -36,7 +36,7 @@ ball.click(shootFirstBall);
 
             left : '20px'
 
-        }, 3000);
+        }, 5000);
 
     }
 
@@ -46,7 +46,7 @@ ball.click(shootFirstBall);
 
             left : '900px'
 
-        }, 3000);
+        }, 5000);
 
     }
 
