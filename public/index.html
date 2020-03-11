@@ -14,16 +14,34 @@
 
 
 
-    <style>
-        body {
-            background-color: #878787;
-            font-family: cursive;
-        }
+</head>
 
-        .jumbotron {
-            background: none;
+<style>
+    body {
+        background-color: #878787;
+        font-family: cursive;
+    }
+
+    .jumbotron {
+        background: none;
+      
+
+    }
+
+    .glow {
+        font-size: 80px;
+        color: #fff;
+        text-align: center;
+        -webkit-animation: glow 1s ease-in-out infinite alternate;
+        -moz-animation: glow 1s ease-in-out infinite alternate;
+        animation: glow 1s ease-in-out infinite alternate;
+    }
 
 
+   
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2;
         }
 
         .glow {
@@ -34,6 +52,7 @@
             -moz-animation: glow 1s ease-in-out infinite alternate;
             animation: glow 1s ease-in-out infinite alternate;
         }
+    }
 
 
       
@@ -46,16 +65,17 @@
                 text-shadow: 0 0 20px yellow, 0 0 20px yellow, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2, 0 0 80px #8A2BE2;
             }
         }
+    }
 
-        @-webkit-keyframes bb {
-            from {
-                box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
-            }
+    #bb {
+        height: 50px;
+        width: 50px;
+        background: transparent;
+        -webkit-animation: bb 1s ease-in-out infinite alternate;
+        -moz-animation: bb 1s ease-in-out infinite alternate;
+        animation: bb 1s ease-in-out infinite alternate;
 
-            to {
-                box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffff, 0 0 50px #ffff, 0 0 60px #ffff, 0 0 70px #fff, 0 0 80px #fff;
-            }
-        }
+    }
 
         .bb {
             height: 50px;
@@ -65,7 +85,6 @@
             -moz-animation: bb 1s ease-in-out infinite alternate;
             animation: bb 1s ease-in-out infinite alternate;
 
-        }
 
         .logos {
             max-width: 1800px;
