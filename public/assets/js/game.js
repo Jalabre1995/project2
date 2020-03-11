@@ -121,7 +121,6 @@ ball.click(shootFirstBall);
         timer();
 
 
-console.log();
      
     
     
