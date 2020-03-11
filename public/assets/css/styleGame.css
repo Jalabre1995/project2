@@ -26,9 +26,32 @@
     border-width: 2px;
     border-color: yellow;
 }
+.ball{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom : 35px;
+    left : 595px;
+}
 .time{
     font-size: 20px;
 }
 .homeScore,.awayScore{
     font-size: 25px;
 }
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2;
+        }   
+
+        to {
+            text-shadow: 0 0 20px yellow, 0 0 20px yellow, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2, 0 0 80px #8A2BE2;
+        }
+    }
