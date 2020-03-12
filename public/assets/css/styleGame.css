@@ -13,6 +13,14 @@
     top: 375px;
     left: 220px;   
 }
+.swoosh{
+    height : 120px;
+    width : 120px;
+    position : fixed;
+    bottom : 300px;
+    left : 600px;
+    z-index: 3;
+}
 .scoreboard{
     background-color: purple;
     width: 200px;
