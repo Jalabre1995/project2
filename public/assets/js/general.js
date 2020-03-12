@@ -2,6 +2,9 @@
 var textWrapper = document.querySelector('.glow');
 var textContent = document.querySelector('.col-md-12')
 var fadeContainer = document.querySelector(".fade")
+var dropbtn = $(".dropdown") 
+var divdrop = $("<div>") 
+var link = $("<button>").text("link")
 var playerSelected = false
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 textContent.innerhtml = textWrapper.textContent.replace(/\S/g, "<span class='logo'>$&</span>");
@@ -65,10 +68,23 @@ anime.timeline({loop: false})
   if (playerSelected == true ){
     $('.start-game').click(function(){
         window.location.href='game.html';
+        
      })
+  } else  {
+    console.log("yo");
+    $('.start-game').click(function(){
+    alert("please select player before starting game")
+    })
   }
   
   
 
+divdrop.append(link)
+divdrop.addClass("dropdown-content")
 
+dropbtn.append(divdrop)
 
+/*function selected (){
+  var startgame = 
+}
+*/
