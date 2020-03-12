@@ -3,108 +3,15 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>NBAs</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <title>NBA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <link rel="stylesheet" href="assets/css/main.css">
-  
-
-
-
-
-    <style>
-        body {
-            background-color: #878787;
-            font-family: cursive;
-        }
-
-        .jumbotron {
-            background: none;
-
-
-        }
-
-        .glow {
-         
-            color: #fff;
-            text-align: center;
-            -webkit-animation: glow 1s ease-in-out infinite alternate;
-            -moz-animation: glow 1s ease-in-out infinite alternate;
-            animation: glow 1s ease-in-out infinite alternate;
-        }
-
-
-      
-        @-webkit-keyframes glow {
-            from {
-                text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2;
-            }
-
-            to {
-                text-shadow: 0 0 20px yellow, 0 0 20px yellow, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2, 0 0 80px #8A2BE2;
-            }
-        }
-
-        @-webkit-keyframes bb {
-            from {
-                box-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #fff, 0 0 60px #fff, 0 0 70px #fff;
-            }
-
-            to {
-                box-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ffff, 0 0 50px #ffff, 0 0 60px #ffff, 0 0 70px #fff, 0 0 80px #fff;
-            }
-        }
-
-        .bb {
-            height: 50px;
-            width: 38px;
-            background: transparent;
-            -webkit-animation: bb 1s ease-in-out infinite alternate;
-            -moz-animation: bb 1s ease-in-out infinite alternate;
-            animation: bb 1s ease-in-out infinite alternate;
-
-        }
-
-        .logos {
-            max-width: 1800px;
-
-        }
-
-
-
-        body {
-            background-image: linear-gradient(to right, rgb(102, 95, 95), black, rgb(102, 95, 95));
-        }
-
-        .start-game {
-            /*    background: none;
-            border: none;  */
-        }
-
-
-       
-
-        .glow {
-  font-weight: 900;
-  font-size: 4.0em;
-}
-
-.glow .letter {
-  display: inline-block;
-  line-height: 1em;
-}
-
-.logos .logo{
-  display: inline-block;
-  line-height: 1em;
-}
-
-
-
-    </style>
 </head>
+
+
 
 <body>
     <div class="jumbotron jumbotron-fluid">
@@ -119,36 +26,41 @@
     <div class="container logos">
         <div class=" row ">
             <div class="col-md-12">
-                <button><img class='bb hawks' src="../public/assets/logos/hawks.png" alt="Hawks"></button>
-                <button><img class='bb 76ers' src="../public/assets/logos/76ers.png" alt="76ers"></button>
-                <button><img class='bb Nets' src="../public//assets/logos/bk-nets.png" alt="Nets"></button>
-                <button><img class='bb blazers' src="../public//assets/logos/blazers.png" alt="blazers"></button>
-                <button><img class='bb bucks' src="../public//assets/logos/bucks.png" alt="bucks"></button>
-                <button><img class='bb bulls' src="../public//assets/logos/bulls.png" alt="bulls"></button>
-                <button><img class='bb cavs' src="../public//assets/logos/hawks.png" alt="cavs"></button>
-                <button><img class='bb celtics' src="../public//assets/logos/celtics.png" alt="celtics"></button>
-                <button><img class='bb clippers' src="../public//assets/logos/clippers.png" alt="clippers"></button>
-                <button><img class='bb warriors' src="../public//assets/logos/golden_state.png" alt="warriors"></button>
-                <button><img class='bb grizzlers' src="../public//assets/logos/grizzlers.png" alt="grizzlers"></button>
-                <button><img class='bb heat' src="../public//assets/logos/heat.png" alt="heat"></button>
-                <button><img class='bb hornets' src="../public//assets/logos/hornets.png" alt="hornets"></button>
-                <button><img class='bb jazz' src="../public//assets/logos/jazz.png" alt="jazz"></button>
-                <button><img class='bb kings' src="../public//assets/logos/kings.png" alt="kings"></button>
-                <button><img class='bb knicks' src="../public//assets/logos/knicks.png" alt="knicks"></button>
-                <button><img class='bb lakers' src="../public//assets/logos/lakers.png" alt="lakers"></button>
-                <button><img class='bb magic' src="../public//assets/logos/magic.png" alt="magic"></button>
-                <button><img class='bb mavericks' src="../public//assets/logos/mavericks.png" alt="mavericks"></button>
-                <button><img class='bb nuggets' src="../public//assets/logos/nuggets.png" alt="nuggets"></button>
-                <button><img class='bb okc' src="../public//assets/logos/okc.png" alt="okc"></button>
-                <button><img class='bb pacers' src="../public//assets/logos/pacers.png" alt="pacers"></button>
-                <button><img class='bb pelicans' src="../public//assets/logos/pelicans.png" alt="pelicans"></button>
-                <button><img class='bb pistons ' src="../public//assets/logos/pistons.png" alt="pistons"></button>
-                <button><img class='bb raptors' src="../public//assets/logos/raptors.png" alt="raptors"></button>
-                <button><img class='bb rockets' src="../public//assets/logos/rockets.png" alt="rockets"></button>
-                <button><img class='bb spurs' src="../public//assets/logos/spurs.png" alt="spurs"></button>
-                <button><img class='bb suns' src="../public//assets/logos/suns.png" alt="suns"></button>
-                <button><img class='bb wizzards' src="../public//assets/logos/wizzards.png" alt="wizzards"></button>
-                <button><img class='bb wolves' src="../public//assets/logos/wolves.png" alt="wolves"></button>
+                <button class = "dropdown"><img class='bb' id = ' hawks' src="../public/assets/logos/hawks.png" alt="Hawks"> </button>
+                <button class = "dropdown"><img class='bb' id = ' 76ers' src="../public/assets/logos/76ers.png" alt="76ers"></button>
+                <button class = "dropdown"><img class='bb' id ='  Nets' src="../public//assets/logos/bk-nets.png" alt="Nets"></button>
+                <button class = "dropdown"><img class='bb' id = ' blazers' src="../public//assets/logos/blazers.png" alt="blazers"></button>
+                <button class = "dropdown"><img class='bb' id = ' bucks' src="../public//assets/logos/bucks.png" alt="bucks"></button>
+                <button class = "dropdown"><img class='bb' id = ' bulls' src="../public//assets/logos/bulls.png" alt="bulls"></button>
+                <button class = "dropdown"><img class='bb' id = ' cavs' src="../public//assets/logos/hawks.png" alt="cavs"></button>
+                <button class = "dropdown"><img class='bb' id = ' celtics' src="../public//assets/logos/celtics.png" alt="celtics"></button>
+                <button class = "dropdown"><img class='bb' id = ' clippers' src="../public//assets/logos/clippers.png" alt="clippers"></button>
+                <button class = "dropdown"><img class='bb' id = ' warriors' src="../public//assets/logos/golden_state.png" alt="warriors"></button>
+                <button class = "dropdown"><img class='bb' id = ' grizzlers' src="../public//assets/logos/grizzlers.png" alt="grizzlers"></button>
+                <button class = "dropdown"><img class='bb' id = ' heat' src="../public//assets/logos/heat.png" alt="heat"></button>
+                <button class = "dropdown"><img class='bb' id = ' hornets' src="../public//assets/logos/hornets.png" alt="hornets"></button>
+                <button class = "dropdown"><img class='bb' id = ' jazz' src="../public//assets/logos/jazz.png" alt="jazz"></button>
+                <button class = "dropdown"><img class='bb' id = ' kings' src="../public//assets/logos/kings.png" alt="kings"></button>
+                <button class = "dropdown"><img class='bb' id = ' knicks' src="../public//assets/logos/knicks.png" alt="knicks"></button>
+                <button class = "dropdown"><img class='bb' id = ' lakers' src="../public//assets/logos/lakers.png" alt="lakers"></button>
+                <button class = "dropdown"><img class='bb' id = ' magic' src="../public//assets/logos/magic.png" alt="magic"></button>
+                <button class = "dropdown"><img class='bb' id = ' mavericks' src="../public//assets/logos/mavericks.png" alt="mavericks"></button>
+                <button class = "dropdown"><img class='bb' id = ' nuggets' src="../public//assets/logos/nuggets.png" alt="nuggets"></button>
+                <button class = "dropdown"><img class='bb' id = ' okc' src="../public//assets/logos/okc.png" alt="okc"></button>
+                <button class = "dropdown"><img class='bb' id = ' pacers' src="../public//assets/logos/pacers.png" alt="pacers"></button>
+                <button class = "dropdown"><img class='bb' id = ' pelicans' src="../public//assets/logos/pelicans.png" alt="pelicans"></button>
+                <button class = "dropdown"><img class='bb' id = ' pistons ' src="../public//assets/logos/pistons.png" alt="pistons"></button>
+                <button class = "dropdown"><img class='bb' id = ' raptors' src="../public//assets/logos/raptors.png" alt="raptors"></button>
+                <button class = "dropdown"><img class='bb' id = ' rockets' src="../public//assets/logos/rockets.png" alt="rockets"></button>
+                <button class = "dropdown"><img class='bb' id = ' spurs' src="../public//assets/logos/spurs.png" alt="spurs"></button>
+                <button class = "dropdown"><img class='bb' id = ' suns' src="../public//assets/logos/suns.png" alt="suns"></button>
+                <button class = "dropdown"><img class='bb' id = ' wizzards' src="../public//assets/logos/wizzards.png" alt="wizzards"></button>
+                <button class = "dropdown"><img class='bb' id = ' wolves' src="../public//assets/logos/wolves.png" alt="wolves"></button>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+                </div>
             </div>
         </div>
     </div>
@@ -176,7 +88,7 @@
 
     </div>
 
-    <script src="https://code.jquery.com/jquery.js"></script>
+   
 
     <script src="assets/js/general.js"></script>
 
