@@ -4,9 +4,12 @@ USE teamplayer;
 
 CREATE TABLE players(
     id INT AUTO_INCREMENT PRIMARY KEY,
-    first_name VARCHAR(20) DEFAULT NULL,
-    last_name VARCHAR(20) DEFAULT NULL,
-    team_name VARCHAR(30) DEFAULT NULL
+    firstName VARCHAR(20) DEFAULT NULL,
+    lastName VARCHAR(20) DEFAULT NULL,
+    teamName VARCHAR(30) DEFAULT NULL
 );
 SELECT*FROM teamplayer;
+
+
+
 
