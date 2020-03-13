@@ -82,10 +82,7 @@ body {
     background-image: linear-gradient(to right, rgb(102, 95, 95), black, rgb(102, 95, 95));
 }
 
-.start-game {
-    /*    background: none;
-    border: none;  */
-}
+
 
 
 
@@ -116,18 +113,27 @@ line-height: 1em;
     cursor: pointer;
   }
   
-  .bb {
+  .dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
     position: relative;
     display: inline-block;
   }
   
   .dropdown-content {
     display: none;
+    
     position: absolute;
-    background-color: #f9f9f9;
+    background-color: #f1f1f1;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 10;
   }
   
   .dropdown-content a {
@@ -137,10 +143,10 @@ line-height: 1em;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #f1f1f1}
   
-  button:hover .dropdown-content {
-    display: block;
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .fade{
+      position: relative;
   }
-  
-  
