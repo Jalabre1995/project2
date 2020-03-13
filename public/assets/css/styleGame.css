@@ -13,6 +13,28 @@
     top: 375px;
     left: 220px;   
 }
+.highScore{
+    text-align: center;
+    background-color: #8A2BE2;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 2px;
+    border-radius: 10px;
+    opacity: 0;
+    position: relative;
+    top: 100px;
+}
+.homeButton{
+    margin: 25px;
+}
+.swoosh{
+    height : 120px;
+    width : 120px;
+    position : fixed;
+    bottom : 300px;
+    left : 600px;
+    z-index: 3;
+}
 .scoreboard{
     background-color: purple;
     width: 200px;
@@ -26,9 +48,37 @@
     border-width: 2px;
     border-color: yellow;
 }
+.ball{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    bottom : 35px;
+    left : 595px;
+}
 .time{
     font-size: 20px;
 }
 .homeScore,.awayScore{
     font-size: 25px;
 }
+.yellow{
+    border: 1px solid yellow;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.glow {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+    @-webkit-keyframes glow {
+        from {
+            text-shadow: 0 0 10px yellow, 0 0 20px yellow, 0 0 30px #8A2BE2, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2;
+        }   
+
+        to {
+            text-shadow: 0 0 20px yellow, 0 0 20px yellow, 0 0 40px #8A2BE2, 0 0 50px #8A2BE2, 0 0 60px #8A2BE2, 0 0 70px #8A2BE2, 0 0 80px #8A2BE2;
+        }
+    }

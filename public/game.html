@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <title>Basketball Game</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/styleGame.css">
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
+  
 
 </head>
 
@@ -17,13 +18,15 @@
 
     <img id="ball" src="assets/img/basketball.png" alt="the basketball">
 
-    <div class="container scoreboard">
+    <!--Scoreboard-->
+
+    <div class="container scoreboard glow">
 
         <div class="row">
 
             <div class="col-md-12 time">
 
-                0:00
+                1:00
 
             </div>
 
@@ -94,6 +97,175 @@
 
     </div>
 
+    <!--High Score Board-->
+
+    <div class="container highScore">
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <h1>Thank You For Playing!</h1>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-12">
+
+                    <h2>Check Out How You Did!</h2>
+
+                </div>
+
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-4 place">
+
+                    Place
+
+                </div>
+
+                <div class="col-md-4 username">
+
+                    Username
+
+                </div>
+
+                <div class="col-md-4 score">
+
+                    Score
+
+                </div>
+
+            </div>
+
+            <div class="row first">
+
+                <div class="col-md-4 yellow">
+
+                    1st
+
+                </div>
+
+                <div class="col-md-4 firstUser yellow">
+
+
+
+                </div>
+
+                <div class="col-md-4 firstScore yellow">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row second">
+
+                <div class="col-md-4 yellow">
+
+                    2nd
+
+                </div>
+
+                <div class="col-md-4 secondUser yellow">
+
+
+
+                </div>
+
+                <div class="col-md-4 secondScore yellow">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row third">
+
+                <div class="col-md-4 yellow">
+
+                    3rd
+
+                </div>
+
+                <div class="col-md-4 thirdUser yellow">
+
+
+
+                </div>
+
+                <div class="col-md-4 thirdScore yellow">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row fourth">
+
+                <div class="col-md-4 yellow">
+
+                    4th
+
+                </div>
+
+                <div class="col-md-4 fourthUser yellow">
+
+
+
+                </div>
+
+                <div class="col-md-4 fourthScore yellow">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row fifth">
+
+                <div class="col-md-4 yellow">
+
+                    5th
+
+                </div>
+
+                <div class="col-md-4 fifthUser yellow">
+
+
+
+                </div>
+
+                <div class="col-md-4 fifthScore yellow">
+
+
+
+                </div>
+
+            </div>
+
+            <div class="row home">
+
+                <div class="col-md-12">
+
+                    <a href="index.html"><button type="submit" class="homeButton" onclick="">Back to Home Page</button></a>
+
+                </div>
+
+            </div>
+
+    </div>
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script>
     <script src="assets/js/game.js"></script>
     
 </body>
