@@ -1,10 +1,12 @@
-var secondsLeft = 60;
+$(document).ready(function(){
+
+var secondsLeft = 6;
 
 var homeScore = 0;
 
 var ball = $("#ball");
 
-ball.click(shootFirstBall)
+ball.click(shootFirstBall);
 
     function timer() {
 
@@ -18,7 +20,11 @@ ball.click(shootFirstBall)
 
             moveRight();
 
-            if (secondsLeft === 0){
+            if (secondsLeft>09){
+
+
+
+            } else if (secondsLeft === 0){
 
                 secondsLeft = "0:00";
 
@@ -28,11 +34,17 @@ ball.click(shootFirstBall)
 
                 $("#hoop").hide();
 
+                $("#ball").hide();
+
                 $(".ball").hide();
+
+                $(".scoreboard").hide();
+
+                $(".highScore").css("opacity","1")
 
             } 
 
-        }, 2000);
+        }, 1000);
 
     }
 
@@ -74,7 +86,7 @@ ball.click(shootFirstBall)
 
             opacity : 0
 
-        },1000);
+        },2000);
 
     }
 
@@ -86,55 +98,51 @@ ball.click(shootFirstBall)
 
             showSwoosh();
 
-        } else if (secondsLeft<53 && secondsLeft>51){
+        } else if (secondsLeft<53.5 && secondsLeft>51.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<50 && secondsLeft>48){
+        } else if (secondsLeft<48.5 && secondsLeft>46.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<43 && secondsLeft>41){
+        } else if (secondsLeft<43.5 && secondsLeft>41.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<38 && secondsLeft>36){
+        } else if (secondsLeft<38.5 && secondsLeft>36.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<33 && secondsLeft>31){
+        } else if (secondsLeft<33.5 && secondsLeft>31.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<28 && secondsLeft>26){
+        } else if (secondsLeft<28.5 && secondsLeft>26.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<23 && secondsLeft>21){
+        } else if (secondsLeft<23.5 && secondsLeft>21.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<18 && secondsLeft>16){
+        } else if (secondsLeft<18.5 && secondsLeft>16.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<13 && secondsLeft>11){
+        } else if (secondsLeft<13.5 && secondsLeft>11.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<8 && secondsLeft>6){
+        } else if (secondsLeft<8.5 && secondsLeft>6.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<3 && secondsLeft>1){
+        } else if (secondsLeft<3.5 && secondsLeft>1.5){
 
             showSwoosh();
-
-        } else if (secondsLeft<1) {
-
-            showSwoosh();
-
-        } 
+            
+        }
 
         $("#ball").animate({
 
@@ -174,55 +182,51 @@ ball.click(shootFirstBall)
 
             showSwoosh();
 
-        } else if (secondsLeft<54 && secondsLeft>52){
+        } else if (secondsLeft<53.5 && secondsLeft>51.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<49 && secondsLeft>47){
+        } else if (secondsLeft<48.5 && secondsLeft>46.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<44 && secondsLeft>42){
+        } else if (secondsLeft<43.5 && secondsLeft>41.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<39 && secondsLeft>37){
+        } else if (secondsLeft<38.5 && secondsLeft>36.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<34 && secondsLeft>32){
+        } else if (secondsLeft<33.5 && secondsLeft>31.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<29 && secondsLeft>27){
+        } else if (secondsLeft<28.5 && secondsLeft>26.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<24 && secondsLeft>22){
+        } else if (secondsLeft<23.5 && secondsLeft>21.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<21 && secondsLeft>19){
+        } else if (secondsLeft<18.5 && secondsLeft>16.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<16 && secondsLeft>14){
+        } else if (secondsLeft<13.5 && secondsLeft>11.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<11 && secondsLeft>9){
+        } else if (secondsLeft<8.5 && secondsLeft>6.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<6 && secondsLeft>4){
+        } else if (secondsLeft<3.5 && secondsLeft>1.5){
 
             showSwoosh();
 
-        } else if (secondsLeft<1) {
-
-            showSwoosh();
-
-        } 
+        }
 
         $(".ball").animate({
 
@@ -255,5 +259,7 @@ ball.click(shootFirstBall)
     }
 
         timer();
+
+});
 
 
