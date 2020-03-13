@@ -13,6 +13,16 @@
     top: 375px;
     left: 220px;   
 }
+.highScore{
+    text-align: center;
+    background-color: #8A2BE2;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 2px;
+    border-radius: 10px;
+    opacity: 0;
+    margin-top: 45px;
+}
 .swoosh{
     height : 120px;
     width : 120px;

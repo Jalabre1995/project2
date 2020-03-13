@@ -1,4 +1,6 @@
-var secondsLeft = 60;
+$(document).ready(function(){
+
+var secondsLeft = 6;
 
 var homeScore = 0;
 
@@ -28,7 +30,13 @@ ball.click(shootFirstBall)
 
                 $("#hoop").hide();
 
+                $("#ball").hide();
+
                 $(".ball").hide();
+
+                $(".scoreboard").hide();
+
+                $(".highScore").css("opacity","1")
 
             } 
 
@@ -247,5 +255,7 @@ ball.click(shootFirstBall)
     }
 
         timer();
+
+});
 
 
