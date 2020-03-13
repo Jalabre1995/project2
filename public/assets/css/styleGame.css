@@ -5,13 +5,51 @@
     position: relative;
     left: 460px;
     top: 20px;
+    z-index: 0;
+    opacity: 0;
 }
 #ball{
     height: 100px;
     width: 100px;
     position: relative;
     top: 375px;
-    left: 220px;   
+    left: 220px;  
+    z-index: 0; 
+    opacity: 0;
+}
+.userInput{
+    text-align: center;
+    background-color:#8a2be2;
+    border-style: solid;
+    border-width: 2px;
+    border-color: yellow;
+    border-radius: 10px;
+    z-index: 1;
+    padding: 15px;
+    margin-top: 30px;
+    position: relative;
+    bottom: 150px;
+}
+.userRow1,.userRow2,.userRow3{
+    padding: 20px;
+    margin: 20px;
+}
+.userRow1{
+    font-size: 30px;
+}
+.user{
+    width: 300px;
+    height: 60px;
+    background-color: lightgray;
+    font-weight: bold;
+}
+.homeButton,.submitUser{
+    background-color: purple;
+    border: 2px solid yellow;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    color: white;
 }
 .highScore{
     text-align: center;
@@ -23,6 +61,7 @@
     opacity: 0;
     position: relative;
     top: 100px;
+    font-weight: bold;
 }
 .homeButton{
     margin: 25px;
@@ -33,7 +72,7 @@
     position : fixed;
     bottom : 300px;
     left : 600px;
-    z-index: 3;
+    z-index: 1;
 }
 .scoreboard{
     background-color: purple;
@@ -47,6 +86,7 @@
     border-style: solid;
     border-width: 2px;
     border-color: yellow;
+    opacity: 0;
 }
 .ball{
     height: 100px;
@@ -60,6 +100,15 @@
 }
 .homeScore,.awayScore{
     font-size: 25px;
+}
+.gold{
+  background-color: gold;
+}
+.silver{
+    background-color: silver;
+}
+.bronze{
+    background-color: #cd7f32;
 }
 .yellow{
     border: 1px solid yellow;
