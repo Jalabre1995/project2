@@ -5,6 +5,7 @@ var fadeContainer = document.querySelector(".fade")
 var dropbtn = $(".dropdown") 
 var divdrop = $("<div>") 
 var link = $("<button>").text("link")
+var id  =  $("img").attr('id')
 var playerSelected = false
 textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 textContent.innerhtml = textWrapper.textContent.replace(/\S/g, "<span class='logo'>$&</span>");
@@ -79,7 +80,7 @@ anime.timeline({loop: false})
   
   
 
-divdrop.append(link)
+
 divdrop.addClass("dropdown-content")
 
 dropbtn.append(divdrop)
@@ -88,3 +89,48 @@ dropbtn.append(divdrop)
   var startgame = 
 }
 */
+/*var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://api-nba-v1.p.rapidapi.com/teams/teamId/2",
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "api-nba-v1.p.rapidapi.com",
+		"x-rapidapi-key": "48b0d11733msh462aed6ac396ee1p1555a7jsn0d010acc7eea"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+	console.log(response);
+}); */
+
+
+var settings = {
+	"async": true,
+	"crossDomain": true,
+	"url": "https://api-nba-v1.p.rapidapi.com/players/teamId/" +id,
+	"method": "GET",
+	"headers": {
+		"x-rapidapi-host": "api-nba-v1.p.rapidapi.com",
+		"x-rapidapi-key": "48b0d11733msh462aed6ac396ee1p1555a7jsn0d010acc7eea"
+	}
+}
+
+$.ajax(settings).done(function (response) {
+  console.log(response);
+  var players  = [] 
+  for(var i = 0; i < response.api.players.length; i++){
+  players.push((response.api.players[i].firstName + " " + response.api.players[i].lastName + "<br>"  ))
+  }
+  var link = $("<button>").text
+  console.log(players);
+ // link.append(players)
+  divdrop.append(players)
+    console.log(divdrop);
+    
+	dropbtn.append(divdrop);
+});
+
+
+
+
