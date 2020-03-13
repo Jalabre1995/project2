@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-var secondsLeft = 6;
+var secondsLeft = 60;
 
 var homeScore = 0;
 
