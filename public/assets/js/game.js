@@ -1,14 +1,36 @@
 $(document).ready(function(){
 
-var secondsLeft = 6;
+var secondsLeft = 60;
 
 var homeScore = 0;
 
 var ball = $("#ball");
 
+var username = $(".submitUser");
+
+// Click listener on button to start the game
+
+username.click(timer);
+
+// Click listener for basketball image
+
 ball.click(shootFirstBall);
 
+// Timer function to run time and move hoop
+
     function timer() {
+
+        var user = $(".user").val();
+
+        console.log(user);
+
+        $(".userInput").hide();
+
+        $('#ball').css("opacity","1");
+
+        $("#hoop").css("opacity","1");
+
+        $(".scoreboard").css("opacity","1");
 
         var timerInterval = setInterval(function(){
 
@@ -21,8 +43,6 @@ ball.click(shootFirstBall);
             moveRight();
 
             if (secondsLeft>09){
-
-
 
             } else if (secondsLeft === 0){
 
@@ -48,6 +68,8 @@ ball.click(shootFirstBall);
 
     }
 
+// Move hoop to left side animation
+
     function moveLeft(){
 
         $("#hoop").animate({
@@ -58,6 +80,8 @@ ball.click(shootFirstBall);
 
     }
 
+// Move hoop to right side animation
+
     function moveRight() {
 
         $("#hoop").animate({
@@ -67,6 +91,8 @@ ball.click(shootFirstBall);
         }, 5000);
 
     }
+
+// Function that shows swoosh and adds point to score
 
     function showSwoosh() {
 
@@ -89,6 +115,8 @@ ball.click(shootFirstBall);
         },2000);
 
     }
+
+// Shoot the first ball function
 
     function shootFirstBall(e) {
 
@@ -162,6 +190,8 @@ ball.click(shootFirstBall);
 
         })
 
+// Function that allows for new ball to appear
+
        var newBall =  $("<img>");
 
        newBall.attr("src","assets/img/basketball.png");
@@ -173,6 +203,8 @@ ball.click(shootFirstBall);
        $("#gameBody").append(newBall);
 
     }
+
+// Function that allows the other balls that appear to be animated
 
     function shootOtherBalls(e) {
 
@@ -257,8 +289,6 @@ ball.click(shootFirstBall);
         $("#gameBody").append(newBall);
 
     }
-
-        timer();
 
 });
 
