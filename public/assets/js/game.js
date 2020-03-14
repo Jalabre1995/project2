@@ -60,7 +60,11 @@ ball.click(shootFirstBall);
 
                 $(".scoreboard").hide();
 
-                $(".highScore").css("opacity","1")
+                $(".highScore").css("opacity","1");
+
+                $(".firstUser").text(user);
+
+                $(".firstScore").text(homeScore);
 
             } 
 
