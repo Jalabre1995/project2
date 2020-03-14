@@ -1,10 +1,9 @@
  { 
   "development": {
-    "username": "m35efqlulwgk7p2l",
-    "password": "w1hhm4u0ipdikrtl",
-    "database": "fpvccmudlve0glis",
-    "host": "l7cup2om0gngra77.cbetxkdyhwsb.us-east-1.rds.amazonaws.com",
-    "port": 3306,
+    "username": "root",
+    "password": "Josh1995@10",
+    "database": "teamplayer",
+    "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
@@ -17,11 +16,7 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "m35efqlulwgk7p2l",
-    "password":"w1hhm4u0ipdikrtl" ,
-    "database": "fpvccmudlve0glis",
-    "host": "3306",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }

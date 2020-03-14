@@ -5,13 +5,13 @@ module.exports = function (sequelize, DataTypes) {
             primaryKey: true,
             autoIncrement: true,
         },
-        first_name: {
+        firstName: {
             type: DataTypes.STRING,
         },
-        last_name: {
+        lastName: {
             type: DataTypes.STRING,
         },
-        team_name: {
+        teamName: {
             type: DataTypes.STRING,
         }
         
