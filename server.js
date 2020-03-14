@@ -251,17 +251,7 @@ app.post("/api/players", function(req, res) {
   }));
   res.json(dbteamplayer); 
   
-  
-  
-  
-  
-  
-  
-  
-   
-  
-  
-  
+
   
 })
 
