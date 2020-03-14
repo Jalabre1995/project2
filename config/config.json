@@ -1,7 +1,9 @@
  { 
   "development": {
     "username": "root",
+ Ramal
     "password": "ucon2020",
+
     "database": "teamplayer",
     "host": "127.0.0.1",
     "dialect": "mysql",
