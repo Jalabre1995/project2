@@ -15,6 +15,8 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
         }
         
+    },{
+        timestamps:false
     });
     return teamplayer;
 };
