@@ -155,4 +155,3 @@ INSERT INTO players (firstName , lastName , teamName)VALUES('Thomas', 'Bryant', 
 
 
 SELECT*FROM players;
-ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'Josh1995@10'
