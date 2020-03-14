@@ -1,6 +1,10 @@
 # THE LEAGUE
 
-The purpose of this application is for users who want to play with their favorite players on their team. Or for users who just wnat to relax and play some games.The first page will show a roster of teams. Pick five players from any team. Once five players are picked, you will be directed to a game where you try to do as many free throws as you can. What you will see in this application is an unfinished product of the application. There is till more work that needs to be done. 
+The purpose of this application is for users who want to play with their favorite players on their team. Or for users who just want to relax and play some games.The first page will show a roster of teams. Pick five players from any team. Once five players are picked, you will be directed to a game where you try to do as many free throws as you can. What you will see in this application is an unfinished product of the application. There is till more work that needs to be done. 
+
+<img src="public/assets/img/homePage.PNG" alt="Home Page">
+
+<img src="public/assets/img/game.PNG" alt="NBA Game">
 
 # Dependencies
 Back-End
