@@ -1,10 +1,9 @@
-{
+ { 
   "development": {
     "username": "root",
-    "password": "Josh1995@10",
+    "password": "Jahrasta_13",
     "database": "teamplayer",
     "host": "127.0.0.1",
-    "port": 3306,
     "dialect": "mysql",
     "operatorsAliases": false
   },
@@ -17,11 +16,7 @@
     "operatorsAliases": false
   },
   "production": {
-    "username": "root",
-    "password": null,
-    "database": "database_production",
-    "host": "127.0.0.1",
-    "dialect": "mysql",
-    "operatorsAliases": false
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
   }
 }
